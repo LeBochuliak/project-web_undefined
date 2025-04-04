@@ -24,7 +24,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-  color: var(--text-color)
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 main {
@@ -34,7 +35,6 @@ main:has(.back-link) {
   text-align: center;
 }
 .section {
-  background-color: var(--background-color);
   width: 100vw;
 }
 .section-name {
