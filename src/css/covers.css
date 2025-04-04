@@ -1,0 +1,89 @@
+.covers-section {
+    margin: 64px auto;
+}
+.covers-container {
+    position: relative;
+    height: 508px;
+    overflow: hidden;
+    background-image: url('../img/covers/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+    .covers-container {
+        background-image: url('../img/covers/background-mobile.png');
+    }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+    .covers-container {
+        background-image: url('../img/covers/background-tablet.png');
+        height: 960px;
+    }
+}
+@media (min-width: 1440px) {
+    .covers-container {
+        height: 960px;
+    }
+}
+/*@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .covers-container {
+        background-image: url('../img/covers/background-2x.png');
+    }
+}*/
+.covers-content {
+    position: absolute;
+    top: -160px;
+    left: 0;
+    right: 0;
+}
+.covers-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 32px;
+    transform: rotate(16deg);
+}
+@media (min-width: 768px) {
+    .covers-line {
+        gap: 40px;
+        margin-bottom: 48px;
+    }
+}
+.covers-item {
+    flex-shrink: 0;
+    display: flex;
+    width: 280px;
+    height: 162px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marqueeLine 10s linear infinite;
+}
+@media (min-width: 768px) {
+    .covers-item {
+        width: 544px;
+        height: 314px;
+    }
+}
+.covers-img {
+    width: 100%;
+    height: 100%;
+}
+.covers-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+}

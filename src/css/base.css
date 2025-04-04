@@ -3,16 +3,19 @@
   font-family: "Inter Tight", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  font-weight: 500;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --background-color: #1c1d20;
+  --text-color: #fafafa;
+  --accent-color: #ed3b44;
+  --cards-color: #242527;
+  --arrow-color: #3b3b3b;
 }
 
 body {
@@ -21,6 +24,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 main {
@@ -28,4 +33,34 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+.section {
+  width: 100vw;
+}
+.section-name {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+.btn {
+  font-family: inherit;
+  border: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
 }
