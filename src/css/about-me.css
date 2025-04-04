@@ -1,9 +1,11 @@
+/* потім прибрати */
 body{
-    background-color: #242527;
+    background-color: #1C1D20;
 
   }
+/* кінець "потім прибрати" */
 
-  .about-me{
+.about-me{
     color:#FAFAFA;
     display: flex;
     flex-direction: column;
@@ -12,8 +14,6 @@ body{
     gap: 32px;
     /* font */
   }
-
-
 .facecard {
     display: flex;
     flex-direction: column;
@@ -24,9 +24,12 @@ body{
 
 }
 .facecard-h {
+    background: #242527;
+    border-radius: 24px;
     text-transform: uppercase;
-    margin: 32px auto;
+    margin: 32px auto 0px auto;
         height: 500px;
+    padding: 32px;
 }
 .facecard-img {
     border-radius: 24px;
@@ -35,7 +38,79 @@ body{
 
 }
 
+/* 2 частина секції */
 
+.ac .ac-trigger::after {
+    content: unset !important;
+    
+}
+.about-accordion{
+    width: 100%;
+}
+.description-list{
+    gap: 20px;
+}
+.accordion-el{
+ /* display: flex; */
+    padding: 0px;
+    gap: 23px;
+ text-transform: uppercase;
+min-height: 68px;
+max-height: fit-content;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: rgba(250, 250, 250, 0.4);
+}
+.accordion-container .ac {
+    background-color: #1C1D20 !important;
+    border: none !important;
+}
+.accordion-container .ac-header {
+    display: flex;
+    flex-direction: row;
+        width: 100% !important;
+        flex-grow: 1 !important;
+        flex-shrink: 0;
+        flex-basis: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        background: transparent;
+        font-size: 18px;
+        position: relative;
+}
+.close-accordion-btn {
+    background: none;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px !important;
+    gap: 10px;
+    margin-left: auto !important;
+    width: 36px !important;
+    height: 36px;
+
+    border: 1px solid rgba(250, 250, 250, 0.2) !important;
+    border-radius: 100px;
+}
+  .arrow-top {
+      fill: currentColor;
+      width: 18px;
+      height: 18px;
+      transform: rotate(180deg);
+  }
+  
+.ac-text{
+  /* all:unset !important; */
+        font-family: 'Inter Tight' !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 150% !important;
+       text-transform: none;
+        color: #FAFAFA !important;
+}
 
 @media (min-width: 768px){
     .facecard {
@@ -52,8 +127,16 @@ body{
         margin: auto;
         width: 100%;
     }
+    .close-accordion-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .arrow-top{
+        width: 20px;
+        height: 20px;
+    }
 }
-@media (min-width: 1200px){
+@media (min-width: 1440px){
     .facecard {
         flex-direction: row;
         height: 700px;
@@ -67,4 +150,5 @@ body{
     .facecard-img {
         height: 100%;
     }
+   
 }
