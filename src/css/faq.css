@@ -24,6 +24,7 @@
 
 .faq-list {
   display: flex;
+  align-items: stretch;
 }
 
 .faq-li-title {
@@ -32,14 +33,15 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: inherit;
-  margin-bottom: 26px;
-  margin-right: auto;
+  flex: 1;
+  margin: 0;
+  max-width: 85%;
+  padding-left: 32px;
 }
 
 .faq-item {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 26px;
   margin-top: 32px;
   padding-bottom: 26px;
   padding-right: 32px;
@@ -47,18 +49,32 @@
   border-width: 100%;
 }
 
+.faq-list-grup-1 .faq-item:last-child {
+  margin-bottom: 54px; /* будь-яке значення */
+}
+
+.faq-list-grup-2 .faq-item:last-child {
+  margin-bottom: 26px; /* інше значення */
+}
+
 .faq-item-grup {
   display: flex;
-  justify-content: center;
   justify-content: space-between;
+  align-items: center; /* Змінено з flex-start на center */
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.faq-list-grup-1,
+.faq-list-grup-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .faq-list-grup-1 :last-child {
   border-bottom: none;
   padding-bottom: 0px;
-}
-
-.faq-list-grup-1 {
-  margin-right: 32px;
 }
 
 .faq-list-grup-2 :last-child {
@@ -67,8 +83,7 @@
 }
 
 .faq-list-grup-2 {
-  margin-left: 32px;
-  border-left: 1px solid rgba(250, 250, 250, 0);
+  border-left: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .faq-toggle {
@@ -81,10 +96,12 @@
   padding: 10px;
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
 }
 
 .faq-content {
   /* display: none; */
+  padding-left: 32px;
 }
 
 .open .faq-content {
@@ -95,6 +112,8 @@
   transform: rotate(180deg);
 }
 
+/*--------------------- media -----------------------*/
+
 @media (max-width: 768px) {
   .faq-container {
     max-width: 90%;
@@ -102,12 +121,13 @@
 
   .faq-list {
     flex-direction: column;
+    gap: 16px;
   }
   .faq-list-grup-1 {
     margin-right: 0px;
   }
   .faq-list-grup-2 {
-    margin-left: 0px;
+    padding-left: 0px;
     border-left: 0px;
   }
 }
