@@ -1,6 +1,16 @@
 .covers-section {
     margin: 64px auto;
 }
+@media (min-width: 768px) {
+    .covers-section {
+            margin: 96px auto;
+        }
+}
+@media (min-width: 1440px) {
+    .covers-section {
+        margin: 164px auto;
+    }
+}
 .covers-container {
     position: relative;
     height: 508px;
