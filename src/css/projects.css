@@ -19,18 +19,8 @@
 
 .projects-title {
   margin-bottom: 32px;
-  color: rgba(250, 250, 250, 0.4);
   font-size: 16px;
-  font-weight: 600;
   line-height: 1.5;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-}
-
-.swiper {
-}
-
-.swiper-wrapper {
 }
 
 .projects-list {
@@ -41,9 +31,6 @@
   .projects-list {
     margin-bottom: 64px;
   }
-}
-
-.swiper-slide {
 }
 
 .projects-item {
@@ -60,7 +47,7 @@
 }
 
 .project-light-side {
-  background: #fafafa;
+  background: var(--text-color);
   padding: 32px;
 }
 
@@ -100,7 +87,7 @@
   border-radius: 60px;
   border: 1px solid rgba(28, 29, 32, 0.2);
 
-  color: #1c1d20;
+  color: var(--background-color);
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
@@ -115,8 +102,8 @@
 
 .project-subtitle {
   padding-bottom: 32px;
-  color: #1c1d20;
 
+  color: var(--background-color);
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -136,10 +123,9 @@
   display: inline-flex;
   padding: 13px 32px;
   border-radius: 60px;
-  background-color: #ed3b44;
+  background-color: var(--accent-color);
 
-  color: #fafafa;
-
+  color: var(--text-color);
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
@@ -160,7 +146,7 @@
 
 .project-dark-side {
   padding: 100px 16px;
-  background: #242527;
+  background: var(--cards-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -175,15 +161,7 @@
   }
 }
 
-.project-img {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
-
 /* -- Navigation buttons -- */
-
 .projects-navigation-buttons {
   display: flex;
   gap: 12px;
@@ -195,9 +173,6 @@
     gap: 20px;
   }
 }
-
-/* .swiper-button-prev {
-} */
 
 .project-swiper-btn {
   display: flex;
@@ -216,25 +191,26 @@
   }
 }
 
-.projects-prev-btn {
-  transform: rotate(180deg);
-}
-
-.projects-prev-icon {
+.projects-icon {
+  fill: var(--text-color);
 }
 
 @media screen and (min-width: 768px) {
-  .projects-prev-icon {
+  .projects-icon {
     width: 32px;
     height: 32px;
   }
 }
 
-/* .swiper-button-next {
-} */
-
-.projects-next-btn {
+.projects-prev-icon {
+  transform: rotate(180deg);
 }
 
-.projects-next-icon {
+/* -- Disabled navigation buttons -- */
+.projects-btn-disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.projects-icon-disabled {
+  fill: var(--arrow-color);
 }

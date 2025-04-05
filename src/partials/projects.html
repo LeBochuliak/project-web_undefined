@@ -1,6 +1,6 @@
 <section class="section projects">
   <div class="container">
-    <h2 class="projects-title">Projects</h2>
+    <h2 class="projects-title section-name">Projects</h2>
     <div class="swiper">
       <ul class="swiper-wrapper projects-list">
         <li class="swiper-slide projects-item">
@@ -27,20 +27,20 @@
               <source
                 media="(max-width: 374px)"
                 srcset="
-                  images/mob-readjourney.jpg    1x,
-                  images/mob-readjourney@2x.jpg 2x
+                  img/projects/mob-readjourney.jpg    1x,
+                  img/projects/mob-readjourney@2x.jpg 2x
                 "
               />
               <source
                 media="(min-width: 375px)"
                 srcset="
-                  images/desk-readjourney.jpg    1x,
-                  images/desk-readjourney@2x.jpg 2x
+                  img/projects/desk-readjourney.jpg    1x,
+                  img/projects/desk-readjourney@2x.jpg 2x
                 "
               />
               <img
                 class="project-img"
-                src="images/desk-readjourney.jpg"
+                src="img/projects/desk-readjourney.jpg"
                 alt="Preview of the 'Read journey' website"
                 width="614"
               />
@@ -70,18 +70,21 @@
             <picture>
               <source
                 media="(max-width: 374px)"
-                srcset="images/mob-petlove.jpg 1x, images/mob-petlove@2x.jpg 2x"
+                srcset="
+                  img/projects/mob-petlove.jpg    1x,
+                  img/projects/mob-petlove@2x.jpg 2x
+                "
               />
               <source
                 media="(min-width: 375px)"
                 srcset="
-                  images/desk-petlove.jpg    1x,
-                  images/desk-petlove@2x.jpg 2x
+                  img/projects/desk-petlove.jpg    1x,
+                  img/projects/desk-petlove@2x.jpg 2x
                 "
               />
               <img
                 class="project-img"
-                src="images/desk-petlove.jpg"
+                src="img/projects/desk-petlove.jpg"
                 alt="Preview of the 'Pet love' website"
                 width="614"
               />
@@ -112,20 +115,20 @@
               <source
                 media="(max-width: 374px)"
                 srcset="
-                  images/mob-vocabbuilder.jpg    1x,
-                  images/mob-vocabbuilder@2x.jpg 2x
+                  img/projects/mob-vocabbuilder.jpg    1x,
+                  img/projects/mob-vocabbuilder@2x.jpg 2x
                 "
               />
               <source
                 media="(min-width: 375px)"
                 srcset="
-                  images/desk-vocabbuilder.jpg    1x,
-                  images/desk-vocabbuilder@2x.jpg 2x
+                  img/projects/desk-vocabbuilder.jpg    1x,
+                  img/projects/desk-vocabbuilder@2x.jpg 2x
                 "
               />
               <img
                 class="project-img"
-                src="images/desk-vocabbuilder.jpg"
+                src="img/projects/desk-vocabbuilder.jpg"
                 alt="Preview of the 'Vocab builder' website"
                 width="614"
               />
@@ -137,22 +140,14 @@
       <!-- Navigation buttons -->
       <div class="projects-navigation-buttons">
         <button type="button" class="projects-prev-btn project-swiper-btn">
-          <svg class="projects-prev-icon" width="24" height="24">
-            <use href=""></use>
-            <!-- <use href="images/icons.svg#icon-horizontal-arrow"></use> -->
+          <svg class="projects-icon projects-prev-icon" width="24" height="24">
+            <use href="img/svg-sprite.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
         <button type="button" class="projects-next-btn project-swiper-btn">
-          <img
-            src="images/arrow-narrow-right.svg"
-            alt="icon"
-            class="projects-prev-icon"
-            width="24"
-            height="24"
-          />
-          <!-- <svg class="projects-next-icon" width="24" height="24">
-            <use href="images/icons.svg#icon-horizontal-arrow"></use>
-          </svg> -->
+          <svg class="projects-icon projects-next-icon" width="24" height="24">
+            <use href="img/svg-sprite.svg#icon-arrow-narrow-right"></use>
+          </svg>
         </button>
       </div>
     </div>
