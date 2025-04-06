@@ -93,7 +93,7 @@ color: rgba(250, 250, 250, 0.4);
 
     margin-left: auto !important;
     width: 36px !important;
-    height: 36px;
+    height: 36px !important;
     gap: 10px;
     border: var(--borders) !important;
     border-radius: 100px;
@@ -140,7 +140,6 @@ background-color: var(--accent-color);
     height: 130px !important;
     width: 130px !important;
 }
-
 .skill {
 position: absolute;
 top: 50%;
@@ -156,12 +155,11 @@ text-align: center;
     transform: translateY(-50%) !important;
     z-index: 100 !important;
 }
-
  .a-m-swiper-button::after {
      display: none !important;
  }
 
- .swiper-button-lock {
+.swiper-button-lock {
      display: block !important;
  }
 .swiper-a-m-svg{
@@ -171,10 +169,6 @@ text-align: center;
          fill: var(--arrow-color);
          stroke: var(--arrow-color);
 }
-
-
-
-
 
 @media (min-width: 768px){
     /* section styles */
@@ -199,11 +193,11 @@ text-align: center;
         width: 100%;
     }
 /* about */
-.about-accordion {
-    margin: auto;
-    min-width: 514px;
-    max-width: 704px;
-}
+    .about-accordion {
+        margin: auto;
+        min-width: 514px;
+        max-width: 704px;
+    }
     .close-accordion-btn{
         width: 40px;
         height: 40px;
@@ -213,14 +207,13 @@ text-align: center;
         height: 20px;
     }
     /* skills */
-        .skills-container{
+    .skills-container{
             height: 200px;
         }
-        .a-m-swiper{
+    .a-m-swiper{
             max-width: 600px !important;
         }
-        
-        .skill-el {
+    .skill-el {
                     width: 200px !important;
                     height: 200px !important;
                 }
@@ -244,17 +237,17 @@ text-align: center;
         height: 100%;
     }
         /* about */
-        .about-accordion {
+    .about-accordion {
             margin: auto;
             min-width: 514px;
             max-width: 1376px;
         }
-        .ac-panel {
+    .ac-panel {
             max-width: 612px;
             margin-left: auto;
                 }
                 /* skills */
-        .a-m-swiper {
-                    max-width: 1200px;
+    .a-m-swiper {
+                    max-width: 1200px !important;
                 }      
             }
