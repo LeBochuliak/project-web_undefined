@@ -1,0 +1,115 @@
+.section-title {
+    font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: rgba(250, 250, 250, 0.4);
+        margin-bottom: 32px;
+}
+
+.benefits-list {
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+.benefits-list-item {
+    background-color: #242527;
+    border-radius: 20px;
+    padding: 24px;
+    width: 344px;
+    height: 270px;
+}
+
+.icon-wrapper {
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: #ED3B44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-item-icon {
+    width: 24px;
+    height: 24px;
+    stroke: #FAFAFA;
+    fill: #ED3B44;
+}
+
+.benefits-item-title {
+    font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: var(--main-text);
+        padding-top: 64px;
+        padding-bottom: 8px;
+}
+
+.benefits-item-text {
+    font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: rgba(250, 250, 250, 0.6);
+
+}
+.work-together-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: var(--main-text);
+        border: 1px solid rgba(250, 250, 250, 0.2);
+        border-radius: 60px;
+        padding: 18px 36px;
+        width: 187px;
+        height: 55px;
+}
+
+.work-together-btn:focus {
+    background-color: #E0373F;
+}
+.work-together-btn:hover {
+    background-color: #E0373F;
+}
+
+@media only screen and (min-width: 768px) {
+.benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+.benefits-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.benefits-list{
+    margin-left: 412px;
+    width: 680px;
+}
+.benefits-list-item {
+    width: 332px;
+}
+
+.work-together-btn {
+    margin-left: 696px;
+}
+}
