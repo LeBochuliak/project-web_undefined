@@ -9,15 +9,35 @@
         <span class="facecard-gray-text">websites</span> that reflect each
         client's unique personality.
       </h3>
-      <img
-        srcset="
-          /img/aboutmeImgs/am-section-img.jpg   1x,
-          /img/aboutmeImgs/am-section-img2x.jpg 2x
-        "
-        src="/img/aboutmeImgs/am-section-img.jpg"
-        alt="facecard of developer"
-        class="facecard-img"
-      />
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/aboutmeImgs/am-section-img-mob.jpg    1x,
+            /img/aboutmeImgs/am-section-img-mob@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/aboutmeImgs/am-section-img-tablet.jpg    1x,
+            /img/aboutmeImgs/am-section-img-tablet@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/aboutmeImgs/am-section-img.jpg    1x,
+            /img/aboutmeImgs/am-section-img@2x.jpg 2x
+          "
+        />
+
+        <img
+          class="facecard-img"
+          src="/img/aboutmeImgs/am-section-img.jpg"
+          alt="facecard of developer"
+        />
+      </picture>
     </div>
     <!--  ABOUT  -->
     <div class="about-accordion">
