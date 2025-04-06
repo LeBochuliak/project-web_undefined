@@ -165,9 +165,8 @@ text-align: center;
 .swiper-a-m-svg{
         width: 28px !important;
         height: 28px !important;
-        color: var(--arrow-color);
-         fill: var(--arrow-color);
-         stroke: var(--arrow-color);
+        stroke: var(--arrow-color);
+     
 }
 
 @media (min-width: 768px){

@@ -42,11 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
         loopAdditionalSlides: 1,
         slidesPerGroup:  1,
         modules: [Navigation],
-
+         keyboard: {
+    enabled: false,
+              },  
         slidesPerView: 2,
           navigation: {
-            nextEl: '.swiper-button-next',
-            
+              nextEl: '.swiper-button-next', 
         },
            breakpoints: {
                375: {
@@ -64,6 +65,14 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 // !Свайпер
-
+document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            const nextBtn = document.querySelector('.swiper-button-next');
+            if (nextBtn) nextBtn.click();
+        } else if (e.key === 'ArrowLeft') {
+            const prevBtn = document.querySelector('.swiper-button-prev');
+            if (prevBtn) prevBtn.click();
+        }
+    });
 });
 
