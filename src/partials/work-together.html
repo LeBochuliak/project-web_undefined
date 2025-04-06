@@ -1,3 +1,74 @@
-<section class="section">
-  <div class="container"></div>
+
+
+
+<section class="work-together" id="work-together">       
+  <div class="container work-together-background-image">         
+    <h2 class="visually-hidden">Let’s work together</h2>   
+    <div class="title-wrapper">                            
+      <img
+        class="work-together-icon"                                 
+        src="./img/work-together/work-together-icon.png"
+        alt="jeff icon"
+        width="44"
+        height="44"
+      />
+      <p class="work-together-text-top">Let’s<span> work </span></p>         
+    </div>
+
+    <p class="work-together-text-bot">together</p>            
+
+    <form class="work-together-form work-together-form-background-image">   
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="work-together-send-email"       
+        placeholder="clients@gmail.com"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+      />
+
+      <input
+        type="text"
+        name="text"
+        id="text"
+        class="work-together-send-text"        
+        placeholder="comments"
+        maxlength="200"
+      />
+
+      <button type="submit" class="work-together-send-contact-btn">Send</button>   
+    </form>
+
+    <address class="work-together-address"> 
+      <ul class="address-list">   
+        <li class="address-item">
+          <a href="mailto:lloydjefferson@gmail.com" class="address-link">
+            lloydjefferson@gmail.com
+          </a>
+        </li>
+        <li class="address-item">
+          <a href="tel:+3801111111111" class="address-link">
+            +380 11 1111 11 11
+          </a>
+        </li>
+      </ul>
+    </address>
+  </div>
 </section>
+
+<div class="work-together-backdrop">       
+  <div class="work-together-modal">        
+    <button class="work-together-modal-btn" type="button">      
+      <svg class="work-together-modal-icon" width="22" height="22">    
+        <use href="./img/svg-sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="work-together-modal-title">    
+      Thank you for your interest in cooperation!
+    </p>
+    <p class="work-together-modal-message">    
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
