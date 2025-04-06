@@ -243,7 +243,7 @@ body.modal-open {
     }
 
     .work-together {
-        background-image: url(../img/work-together/glass-work-together-tab.png);
+        background-image: url(../img/work-together/glass-work-together1x-tab.png);
         background-repeat: no-repeat;
         background-position: right;
     }
@@ -340,7 +340,7 @@ body.modal-open {
 @media only screen and (min-width: 1440px) {
 
     .work-together {
-        background-image: url(../img/work-together/glass-work-together-desc.png);
+        background-image: url(../img/work-together/glass-work-together1x-desc.png);
         background-repeat: no-repeat;
         background-position: 100% 50%;
 
