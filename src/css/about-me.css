@@ -59,7 +59,7 @@ font-size: 16px;
 line-height: 24px;
 color: rgba(250, 250, 250, 0.4);
 }
-.accordion-container .ac {
+.description-list .accordion-el {
     background-color: var(--background-color) !important;
     border-bottom: var(--borders);
     border-top: none;
@@ -100,7 +100,7 @@ color: rgba(250, 250, 250, 0.4);
     transform: rotate(180deg);
   }
 
-.ac-text{
+.ac-a-m-text{
         font-family: 'Inter Tight' !important;
         font-style: normal !important;
         font-weight: 500 !important;
