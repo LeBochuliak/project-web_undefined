@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    const accordion = new Accordion(".accordion-container", {
+    const accordion = new Accordion(".description-list", {
         openOnInit: [0],
         duration: 400,
         showMultiple: false,
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // !Акордеон
 
 // Свайпер
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.a-m-swiper', {
         direction: 'horizontal',
         loop: true,
         loopAdditionalSlides: 1,
