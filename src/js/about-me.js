@@ -6,12 +6,9 @@ import Swiper from 'swiper';
 import { Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// !Бібліотеки
-//  Swiper.use([Navigation]);
-
-                // Акордеон
+//  !Бібліотеки
 document.addEventListener("DOMContentLoaded", () => {
+// Акордеон
     const accEls = document.querySelectorAll(".accordion-el");
     [...accEls].forEach((accEl) => {
         if (accEl.classList.contains("is-active")) {
@@ -36,47 +33,15 @@ document.addEventListener("DOMContentLoaded", () => {
             if (icon) icon.style.transform = "rotate(180deg)";
         },
     });
-    // ! Акордеон
+// !Акордеон
 
-    // Свайпер
-
-    //     const swiper = new Swiper('.swiper', {
-    //         slidesPerGroup: 1,   
-    //         spaceBetween: 0,
-    //         centeredSlides: false,   
-    //         // uniqueNavElements: true,
-    //         speed: 400,
-    //   direction: 'horizontal',
-    //   loop: true,
-    //         loopAddBlankSlides: true,	
-    //     slideToClickedSlide: false,  
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //   },
-    //   breakpoints: {
-    //         320: {
-    //         slidesPerGroup:  1,
-    //       slidesPerView: 2,
-    //     },
-    //         768: {
-    //             slidesPerGroup:  1,
-    //       slidesPerView: 3,
-    //     },
-    //         1440: {
-    //             slidesPerGroup:  1,
-    //       slidesPerView: 3,
-    //     }
-    //     },
-    
-    // });
-
+// Свайпер
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
-        loopAdditionalSlides: 2,
+        loopAdditionalSlides: 1,
         slidesPerGroup:  1,
         modules: [Navigation],
-            //         spaceBetween: 0,
 
         slidesPerView: 2,
           navigation: {
@@ -98,8 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         },
     });
-
-
+// !Свайпер
 
 });
 
