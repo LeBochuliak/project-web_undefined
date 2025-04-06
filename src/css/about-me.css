@@ -9,6 +9,7 @@
     align-items: flex-start;
     gap: 32px;
   }
+  /* FACECARD */
 .facecard {
     display: flex;
     flex-direction: column;
@@ -24,14 +25,19 @@
     margin: 32px auto 0px auto;
     height: 500px;
     padding: 32px;
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 117%;
+        text-transform: uppercase;
 }
+
 .facecard-img {
     border-radius: 24px;
     object-fit: cover;
     margin: auto;
 }
 
-/* 2 частина секції */
+/* ABOUT */
 
 .ac .ac-trigger::after {
     content: unset !important;
@@ -68,9 +74,13 @@ color: rgba(250, 250, 250, 0.4);
     padding: 0;
     font-size: 16px;
     position: relative;
+        flex-grow: 1 !important;
+            flex-shrink: 0;
+            flex-basis: auto;
+            justify-content: space-between;
 }
 .close-accordion-btn {
-    /* background: none; */
+    background: none;
     display: flex !important;
     flex-direction: row;
     align-items: center;
@@ -79,7 +89,7 @@ color: rgba(250, 250, 250, 0.4);
     margin-left: auto !important;
     width: 36px !important;
     height: 36px;
-
+    gap: 10px;
     border: var(--borders) !important;
     border-radius: 100px;
 }
@@ -100,24 +110,26 @@ color: rgba(250, 250, 250, 0.4);
         color: var(--text-color) !important;
         width: 100%;
 }
-/* 3 частина секції */
+/* SKILLS */
 .skills-container {
     padding: 0px;
     height: 130px;
     width: 100%;
     position: relative;
 }
-.skills-container .swiper {
+ .swiper {
     max-width: 260px;
     margin-left: 0 !important;
     position: initial !important;
 }
-/* .skills-list {
-} */
+.skills-list {
+    position: initial !important;
+}
 .skills-container .swiper-slide-active{
 background-color: var(--accent-color);
 }
 .skill-el {
+    position: relative;
     border: var(--borders);
     border-radius: 100%;
     height: 130px !important;
@@ -131,7 +143,7 @@ transform: translate(-50%, -50%);
 left: 50%;
 text-align: center;
 }
-.swiper-button-next {
+.a-m-swiper-button {
     width: 28px !important;
     height: 28px !important;
     right: 0px !important;
@@ -140,18 +152,19 @@ text-align: center;
     z-index: 100 !important;
 }
 
- .swiper-button-next::after {
+ .a-m-swiper-button::after {
      display: none !important;
  }
 
- /* .swiper-button-lock {
+ .swiper-button-lock {
      display: block !important;
  }
-  */
 .swiper-a-m-svg{
         width: 28px !important;
         height: 28px !important;
-    stroke: var(--arrow-color);
+        color: var(--arrow-color);
+         fill: var(--arrow-color);
+         stroke: var(--arrow-color);
 }
 
 
@@ -177,24 +190,15 @@ text-align: center;
     .facecard-h {
         padding: 64px;
         height: 700px;
-        font-weight: 500;
         font-size: 38px;
         line-height: 105%;
-        color: #FAFAFA;
+        color: var(--text-color);
     }
     .facecard-img {
         margin: auto;
         width: 100%;
     }
-    .ac-text{
-            font-family: 'Inter Tight';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 150%;
-            color: #FAFAFA;
-        
-    }
+/* about */
     .close-accordion-btn{
         width: 40px;
         height: 40px;
@@ -217,9 +221,11 @@ text-align: center;
                 }
 }
 @media (min-width: 1440px){
+    /* section */
     .about-me {
         gap: 96px;
     }
+    /* facecard */
     .facecard {
         flex-direction: row;
         height: 700px;
@@ -232,14 +238,15 @@ text-align: center;
     .facecard-img {
         height: 100%;
     }
+        /* about */
         .about-accordion {
             margin: auto;
             min-width: 514px;
             max-width: 1376px;
         }
-                .ac-panel {
-                    max-width: 612px;
-                    margin-left: auto;
+        .ac-panel {
+            max-width: 612px;
+            margin-left: auto;
                 }
                 /* skills */
            .swiper {
