@@ -119,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   
+
     refs.modalBtn.addEventListener('click', closeModal);
   
     refs.modalBackdrop.addEventListener('click', function (event) {
