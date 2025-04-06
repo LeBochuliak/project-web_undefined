@@ -43,7 +43,7 @@
 }
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .covers-container {
-    background-image: url('../img/covers/background-tablet@2x.png');
+    background-image: url('../img/covers/background@2x.png');
   }
 }
 .covers-content {
