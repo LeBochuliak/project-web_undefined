@@ -1,0 +1,149 @@
+.reviews {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.reviews-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.reviews-list {
+  margin-bottom: 32px;
+}
+
+.review-item {
+  max-width: 344px;
+  padding: 31px 24px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+}
+
+.review-photo {
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.review-author {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  max-width: 295px;
+}
+
+.swiper-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  width: 52px !important;
+  height: 52px !important;
+  background-color: transparent;
+  position: unset !important;
+  margin-top: 0 !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: none !important;
+}
+
+.swiper-button-disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.swiper-button-disabled .icon {
+  stroke: #3b3b3b;
+  fill: none;
+}
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  width: 24px !important;
+  height: 24px !important;
+  stroke: #fafafa;
+  fill: none;
+}
+
+.reviews-not-found {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iziToast > .iziToast-body .iziToast-buttons > button {
+  background: transparent !important;
+  border: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 68px !important;
+    height: 68px !important;
+  }
+
+  .icon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .swiper-buttons {
+    gap: 20px;
+  }
+
+  .reviews-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .reviews {
+    padding-top: 82px;
+    padding-bottom: 164px;
+  }
+}
