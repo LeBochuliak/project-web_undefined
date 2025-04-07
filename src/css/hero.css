@@ -1,11 +1,11 @@
 .hero {
     padding-top: 0;
     position: relative;
+    background-image: url(../img/hero.img/hero-mob.png);
 }
 
 .container-narrow {
     background-color: #1c1d20;
-    background-image: url(../img/hero.img/hero-mob.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -68,9 +68,12 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .hero {
+        background-image: url(../img/hero.img/hero-tablet.png);
+    }
+    
     .container-narrow {
         padding-top: 300px;
-        background-image: url(../img/hero.img/hero-tablet.png);
     }
 
     .hero-title {
@@ -116,7 +119,7 @@
         margin-bottom: 243px;
     }
 
-    .container-narrow {
+    .hero {
         background-image: url(../img/hero.img/hero-desk.png);
     }
 }
