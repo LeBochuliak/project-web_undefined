@@ -12,8 +12,9 @@
 }
 
 .faq-container {
-  max-width: 343px;
+  max-width: 375px;
   width: 100%;
+  margin: o auto;
 }
 
 .wrapper {
@@ -38,6 +39,7 @@
 
 .accordion-container2 > .ac {
   border-left: none !important;
+  border-right: none !important;
 }
 
 .accordion-container3 > .ac {
@@ -75,123 +77,23 @@
   transition: transform 0.3s ease;
 }
 
-/* .faq-columns-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.accordion-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 50%;
-  gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Accordion item */
-/* .ac {
-  background: transparent;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-}
-
-ac-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-
-.ac-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 1);
-  flex: 1;
-  margin: 0;
-  padding-right: 16px;
-}
-
-.close-accordion-btn {
-  background: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 100px;
-  transition: border-color 0.3s ease;
-}
-
-.close-accordion-btn:hover {
-  border-color: rgba(250, 250, 250, 0.4);
-}
-
-.arrow-top {
-  fill: currentColor;
-  width: 18px;
-  height: 18px;
-  transition: transform 0.3s ease;
-  transform: rotate(180deg);
-}
-
-.ac.is-active .arrow-top {
-  transform: rotate(0deg);
-}
-
-.ac-panel {
-  margin-top: 16px;
-  padding-right: 32px;
-  padding-left: 0;
-  display: none;
-}
-
-.ac.is-active .ac-panel {
-  display: block;
-}
-
-.ac-text {
-  font-size: 16px;
-  line-height: 1.5;
-  color: rgba(250, 250, 250, 0.9);
-} */
-
-/* -------------          media           ---------------- */
-
-/* @media (max-width: 768px) {
-  .faq-columns-wrapper {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .accordion-container {
-    flex: 1 1 100%;
-  }
-
-  .close-accordion-btn {
-    width: 36px;
-    height: 36px;
-  }
-
-  .arrow-top {
-    width: 18px;
-    height: 18px;
+@media (min-width: 768px) {
+  .faq-container {
+    max-width: 704px;
   }
 }
 
-@media (max-width: 343px) {
+@media (min-width: 1440px) {
   .faq-container {
     max-width: 100%;
-    padding: 64px 16px;
+    max-height: 640px;
   }
 
-  .faq-title {
-    padding-bottom: 24px;
+  .wrapper {
+    flex-direction: row;
   }
-} */
+
+  .accordion-container2 > .ac {
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
+}
