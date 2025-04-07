@@ -20,18 +20,19 @@ function initAccordion() {
     if (icon) icon.style.transform = `rotate(${deg}deg)`;
     };
 
-     Array.from(document.querySelectorAll(".accordion-el"))
-    .filter(el => el.classList.contains("is-active"))
-    .forEach(el => rotateArrow(el, 0));
-
-new Accordion(".description-list", {
+const accordion = new Accordion(".description-list", {
         openOnInit: [0],
         duration: 400,
         showMultiple: false,
         
-       onOpen: (el) => rotateArrow(el, 0),
+        onOpen: (el) => rotateArrow(el, 0),
         onClose: (el) => rotateArrow(el, 180),
-    });
+});
+    
+    Array.from(document.querySelectorAll(".accordion-el")).filter(el => el.classList.contains("is-active")).forEach(el => { 
+  rotateArrow(el, 0);
+   
+});
 }
     
 function initSwiper() {
