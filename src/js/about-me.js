@@ -47,7 +47,7 @@ function initSwiper() {
             enabled: false,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
+            nextEl: '.a-m-swiper-button',
         },
         breakpoints: {
             375: {
