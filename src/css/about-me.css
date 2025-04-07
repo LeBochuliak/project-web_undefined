@@ -1,19 +1,15 @@
-/* потім прибрати */
-body{
-    background-color: #1C1D20;
 
-  }
-/* кінець "потім прибрати" */
 
+.about-me-section{
+--borders: 1px solid rgba(250, 250, 250, 0.2);
+}
 .about-me{
-    color:#FAFAFA;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 32px;
-    /* font */
   }
+  /* FACECARD */
 .facecard {
     display: flex;
     flex-direction: column;
@@ -21,28 +17,35 @@ body{
     padding: 0px;
     gap: 16px;
     max-width: 100%;
-
 }
 .facecard-h {
-    background: #242527;
+    background: var(--cards-color);
     border-radius: 24px;
     text-transform: uppercase;
     margin: 32px auto 0px auto;
-        height: 500px;
+    height: 500px;
     padding: 32px;
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 117%;
+        text-transform: uppercase;
+        letter-spacing: -0.03em;
 }
+
 .facecard-img {
     border-radius: 24px;
     object-fit: cover;
     margin: auto;
-
 }
-
-/* 2 частина секції */
-
+.facecard-accent-text{
+    color: var(--accent-color);
+}
+.facecard-gray-text{
+    opacity: 40%;
+}
+/* ABOUT */
 .ac .ac-trigger::after {
     content: unset !important;
-    
 }
 .about-accordion{
     width: 100%;
@@ -51,10 +54,9 @@ body{
     gap: 20px;
 }
 .accordion-el{
- /* display: flex; */
-    padding: 0px;
-    gap: 23px;
- text-transform: uppercase;
+padding: 0px;
+gap: 23px;
+text-transform: uppercase;
 min-height: 68px;
 max-height: fit-content;
 font-weight: 600;
@@ -62,23 +64,25 @@ font-size: 16px;
 line-height: 24px;
 color: rgba(250, 250, 250, 0.4);
 }
-.accordion-container .ac {
-    background-color: #1C1D20 !important;
-    border: none !important;
+.description-list .accordion-el {
+    background-color: var(--background-color) !important;
+    border-bottom: var(--borders);
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 .accordion-container .ac-header {
     display: flex;
     flex-direction: row;
-        width: 100% !important;
+    width: 100% !important;
+    align-items: center;
+    padding: 0;
+    font-size: 16px;
+    position: relative;
         flex-grow: 1 !important;
-        flex-shrink: 0;
-        flex-basis: auto;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        background: transparent;
-        font-size: 18px;
-        position: relative;
+            flex-shrink: 0;
+            flex-basis: auto;
+            justify-content: space-between;
 }
 .close-accordion-btn {
     background: none;
@@ -86,46 +90,112 @@ color: rgba(250, 250, 250, 0.4);
     flex-direction: row;
     align-items: center;
     padding: 10px !important;
-    gap: 10px;
+
     margin-left: auto !important;
     width: 36px !important;
-    height: 36px;
-
-    border: 1px solid rgba(250, 250, 250, 0.2) !important;
+    height: 36px !important;
+    gap: 10px;
+    border: var(--borders) !important;
     border-radius: 100px;
 }
   .arrow-top {
-      fill: currentColor;
-      width: 18px;
-      height: 18px;
-      transform: rotate(180deg);
+    stroke: var(--text-color);
+    width: 18px;
+    height: 18px;
+    transform: rotate(180deg);
   }
-  
-.ac-text{
-  /* all:unset !important; */
+
+.ac-a-m-text{
         font-family: 'Inter Tight' !important;
         font-style: normal !important;
         font-weight: 500 !important;
         font-size: 16px !important;
         line-height: 150% !important;
        text-transform: none;
-        color: #FAFAFA !important;
+        color: var(--text-color) !important;
+        width: 100%;
+}
+/* SKILLS */
+.skills-container {
+    padding: 0px;
+    height: 130px;
+    width: 100%;
+    position: relative;
+}
+ .a-m-swiper{
+    max-width: 260px !important;
+    margin-left: 0 !important;
+    position: initial !important;
+}
+.skills-list {
+    position: initial !important;
+}
+.skills-container .swiper-slide-active{
+background-color: var(--accent-color);
+}
+.skill-el {
+    position: relative;
+    border: var(--borders);
+    border-radius: 100%;
+    height: 130px !important;
+    width: 130px !important;
+}
+.skill {
+position: absolute;
+top: 50%;
+transform: translate(-50%, -50%);
+left: 50%;
+text-align: center;
+}
+.a-m-swiper-button {
+    width: 28px !important;
+    height: 28px !important;
+    right: 0px !important;
+    top: calc(50% + 21px) !important;
+    transform: translateY(-50%) !important;
+    z-index: 100 !important;
+}
+ .a-m-swiper-button::after {
+     display: none !important;
+ }
+
+.swiper-button-lock {
+     display: block !important;
+ }
+.swiper-a-m-svg{
+        width: 28px !important;
+        height: 28px !important;
+        stroke: var(--arrow-color);
+     
 }
 
 @media (min-width: 768px){
+    /* section styles */
+    .about-me {
+            gap: 64px;
+        }
+        /* facecard */
     .facecard {
         margin: auto;
         min-width: 514px;
         max-width: 704px;
     }
     .facecard-h {
-        margin: 64px;
-        /* margin: auto; */
+        padding: 64px;
         height: 700px;
+        font-size: 38px;
+        line-height: 105%;
+        color: var(--text-color);
     }
     .facecard-img {
         margin: auto;
         width: 100%;
+    }
+/* about */
+    .about-accordion {
+        margin: auto;
+        min-width: 514px;
+        max-width: 704px;
     }
     .close-accordion-btn{
         width: 40px;
@@ -135,20 +205,48 @@ color: rgba(250, 250, 250, 0.4);
         width: 20px;
         height: 20px;
     }
+    /* skills */
+    .skills-container{
+            height: 200px;
+        }
+    .a-m-swiper{
+            max-width: 600px !important;
+        }
+    .skill-el {
+                    width: 200px !important;
+                    height: 200px !important;
+                }
 }
 @media (min-width: 1440px){
+    /* section */
+    .about-me {
+        gap: 96px;
+    }
+    /* facecard */
     .facecard {
         flex-direction: row;
         height: 700px;
         max-width:100%;
     }
     .facecard-h {
-        margin: 64px;
-        /* margin: auto; */
+         margin: auto;
         height: 100%;
     }
     .facecard-img {
         height: 100%;
     }
-   
-}
+        /* about */
+    .about-accordion {
+            margin: auto;
+            min-width: 514px;
+            max-width: 1376px;
+        }
+    .ac-panel {
+            max-width: 612px;
+            margin-left: auto;
+                }
+                /* skills */
+    .a-m-swiper {
+                    max-width: 1200px !important;
+                }      
+            }
