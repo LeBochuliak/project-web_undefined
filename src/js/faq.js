@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-new Accordion(['.accordion-container2', '.accordion-container3'], {
+new Accordion(['.accordion-container2'], {
   duration: 300,
   showMultiple: false,
   onOpen: currElement => {

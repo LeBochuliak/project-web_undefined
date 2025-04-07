@@ -23,12 +23,14 @@
   width: 100%;
 }
 
-.accordion-container2,
-.accordion-container3 {
+.accordion-container2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   border-top: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.ac {
+.ac-faq {
   position: relative !important;
   padding: 20px 0px;
   --color-white: #1c1d20 !important;
@@ -36,9 +38,10 @@
   border: 0px solid var(rgba(250, 250, 250, 0.2)) !important;
   margin-bottom: 0px !important;
   border-top: none !important;
+  width: 100%;
 }
 
-.ac-header {
+.ac-header-faq {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +53,7 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--main-text);
-  gap: 68px;
+  gap: 16px;
 }
 
 .accordion-container2 > .ac {
@@ -63,15 +66,12 @@
   border-left: none !important;
 }
 
-.ac-trigger {
+.ac-trigger-faq {
   display: flex;
   justify-items: center;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-  position: absolute !important;
-  top: 4px !important;
-  left: 92% !important;
   width: 40px;
   height: 40px;
   max-width: 40px;
@@ -114,6 +114,13 @@
 }
 
 @media (min-width: 1440px) {
+  .ac-faq {
+    width: 50%;
+  }
+
+  .ac-trigger {
+    margin-right: 32px !important;
+  }
   .faq {
     margin: 164px auto;
   }
@@ -127,12 +134,30 @@
   }
 
   .accordion-container2 {
-    border-right: solid rgba(250, 250, 250, 0.2) !important;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .accordion-container3 > * {
+  .ac-faq:nth-child(1) {
+    border-right: 1px solid rgba(250, 250, 250, 0.2) !important;
+  }
+  .ac-faq:nth-child(3) {
+    border-right: 1px solid rgba(250, 250, 250, 0.2) !important;
+  }
+  .ac-faq:nth-child(5) {
+    border-right: 1px solid rgba(250, 250, 250, 0.2) !important;
+  }
+
+  .ac-faq:nth-child(2) {
     padding-left: 32px;
   }
+  .ac-faq:nth-child(4) {
+    padding-left: 32px;
+  }
+  .ac-faq:nth-child(6) {
+    padding-left: 32px;
+  }
+
   .ac-item-text {
     margin-top: 21px;
     margin-bottom: 26px;
