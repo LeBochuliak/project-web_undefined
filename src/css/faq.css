@@ -1,5 +1,5 @@
 .faq {
-  margin: 164px 0;
+  margin: 64px 0;
 }
 
 .faq-title {
@@ -8,19 +8,74 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
-  padding-bottom: 32px;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   margin-bottom: 32px;
 }
 
 .faq-container {
-  max-width: 1440px;
+  max-width: 343px;
   width: 100%;
-  min-height: 332px;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.faq-columns-wrapper {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-container2,
+.accordion-container3 {
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.ac {
+  position: relative !important;
+  padding: 10px 10px 10px 0px;
+  --color-white: #1c1d20 !important;
+  --color-light-grey: #48494c !important;
+  border: 0px solid var(rgba(250, 250, 250, 0.2)) !important;
+  margin-bottom: 0px !important;
+  border-top: none !important;
+}
+
+.accordion-container2 > .ac {
+  border-left: none !important;
+}
+
+.accordion-container3 > .ac {
+  border-right: none !important;
+  border-left: none !important;
+}
+
+.ac-trigger {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: absolute !important;
+  top: 4px !important;
+  left: 92% !important;
+  width: 40px;
+  height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2) !important;
+  padding: 0px !important;
+}
+
+.ac-trigger > svg {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.ac-item-text {
+  color: #a1a2a3 !important;
+}
+
+.arrow-top {
+  transition: transform 0.3s ease;
+}
+
+/* .faq-columns-wrapper {
   display: flex;
   flex-direction: row;
   gap: 32px;
@@ -38,7 +93,7 @@
 }
 
 /* Accordion item */
-.ac {
+/* .ac {
   background: transparent;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
@@ -105,11 +160,11 @@ ac-header {
   font-size: 16px;
   line-height: 1.5;
   color: rgba(250, 250, 250, 0.9);
-}
+} */
 
 /* -------------          media           ---------------- */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .faq-columns-wrapper {
     flex-direction: column;
     gap: 24px;
@@ -139,4 +194,4 @@ ac-header {
   .faq-title {
     padding-bottom: 24px;
   }
-}
+} */

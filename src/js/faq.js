@@ -1,29 +1,15 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-  new Accordion('.accordion-container', {
-    duration: 300,
-    showMultiple: true,
-    openOnInit: [],
-  });
-
-  const accordions = document.querySelectorAll('.ac');
-
-  accordions.forEach(item => {
-    const trigger = item.querySelector('.close-accordion-btn');
-    const icon = trigger?.querySelector('.arrow-top');
-
-    if (trigger && icon) {
-      trigger.addEventListener('click', () => {
-        setTimeout(() => {
-          if (item.classList.contains('is-active')) {
-            icon.style.transform = 'rotate(0deg)';
-          } else {
-            icon.style.transform = 'rotate(180deg)';
-          }
-        }, 300);
-      });
-    }
-  });
+new Accordion(['.accordion-container2', '.accordion-container3'], {
+  duration: 300,
+  showMultiple: false,
+  onOpen: currElement => {
+    const icon = currElement.querySelector('.arrow-top');
+    if (icon) icon.style.transform = 'rotate(0deg)';
+  },
+  onClose: currElement => {
+    const icon = currElement.querySelector('.arrow-top');
+    if (icon) icon.style.transform = 'rotate(180deg)';
+  },
 });
