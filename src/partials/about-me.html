@@ -1,10 +1,43 @@
-<section class="section about-me-section">
+<section id="about" class="section about-me-section">
   <div class="about-me container">
     <h2 class="visually-hidden">About Me</h2>
     <!-- facecard -->
-    <div class="facecard">
-      <h3 class="facecard-h">
+    <div class="a-m-facecard">
+      <h3 class="a-m-facecard-h a-m-uppercased">
         I work with people all over the world to create impressive and
+        <span class="a-m-facecard-accent-text">functional</span>
+        <span class="a-m-facecard-gray-text">websites</span> that reflect each
+        client's unique personality.
+      </h3>
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/aboutmeImgs/am-section-img-mob.jpg    1x,
+            /img/aboutmeImgs/am-section-img-mob@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/aboutmeImgs/am-section-img-tablet.jpg    1x,
+            /img/aboutmeImgs/am-section-img-tablet@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/aboutmeImgs/am-section-img.jpg    1x,
+            /img/aboutmeImgs/am-section-img@2x.jpg 2x
+          "
+        />
+
+        <img
+          class="a-m-facecard-img"
+          src="/img/aboutmeImgs/am-section-img.jpg"
+          alt="facecard of developer"
+        />
+      </picture>
         <span class="facecard-accent-text">functional</span>
         <span class="facecard-gray-text">websites</span> that reflect each
         client's unique personality.
@@ -22,6 +55,16 @@
     <!--  ABOUT  -->
     <div class="about-accordion">
       <ul class="accordion-container description-list">
+        <li class="ac a-m-accordion-el">
+          <h3 class="ac-header a-m-uppercased a-m-ac-header">
+            ABOUT ME
+            <button class="close-accordion-btn ac-trigger">
+              <svg class="icon a-m-arrow-top">
+                <use xlink:href="/img/svg-sprite.svg#icon-arrow-top"></use>
+              </svg>
+            </button>
+          </h3>
+          <div class="ac-panel a-m-ac-panel">
         <li class="ac accordion-el">
           <h3 class="ac-header">
             ABOUT ME
@@ -56,10 +99,16 @@
           </div>
         </li>
 
-        <li class="ac accordion-el">
-          <h3 class="ac-header">
+        <li class="ac a-m-accordion-el">
+          <h3 class="ac-header a-m-ac-header a-m-uppercased">
             ROLE
             <button class="close-accordion-btn ac-trigger">
+              <svg class="icon a-m-arrow-top">
+                <use xlink:href="/img/svg-sprite.svg#icon-arrow-top"></use>
+              </svg>
+            </button>
+          </h3>
+          <div class="ac-panel a-m-ac-panel">
               <svg class="icon arrow-top">
                 <use xlink:href="../img/svg-sprite.svg#icon-arrow-top"></use>
               </svg>
@@ -72,10 +121,16 @@
           </div>
         </li>
 
-        <li class="ac accordion-el">
-          <h3 class="ac-header">
+        <li class="ac a-m-accordion-el">
+          <h3 class="ac-header a-m-ac-header a-m-uppercased">
             EDUCATION
             <button class="close-accordion-btn ac-trigger">
+              <svg class="icon a-m-arrow-top">
+                <use xlink:href="/img/svg-sprite.svg#icon-arrow-top"></use>
+              </svg>
+            </button>
+          </h3>
+          <div class="ac-panel a-m-ac-panel">
               <svg class="icon arrow-top">
                 <use xlink:href="../img/svg-sprite.svg#icon-arrow-top"></use>
               </svg>
@@ -97,7 +152,6 @@
         </li>
       </ul>
     </div>
-
     <!-- skills -->
     <div class="skills-container">
       <div class="swiper a-m-swiper">
@@ -141,7 +195,7 @@
         </ul>
         <div class="swiper-button-next a-m-swiper-button">
           <svg class="swiper-a-m-svg">
-            <use xlink:href="/img/svg-sprite.svg#icon-arrow-narrow-right"></use>
+            <use xlink:href="img/svg-sprite.svg#icon-arrow-narrow-right"></use>
           </svg>
         </div>
       </div>

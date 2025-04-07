@@ -2,6 +2,7 @@
 
 .about-me-section{
 --borders: 1px solid rgba(250, 250, 250, 0.2);
+margin-top: 69px;
 }
 .about-me{
     display: flex;
@@ -9,8 +10,11 @@
     align-items: flex-start;
     gap: 32px;
   }
+  .a-m-uppercased{
+    text-transform: uppercase;
+  }
   /* FACECARD */
-.facecard {
+.a-m-facecard {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -18,24 +22,24 @@
     gap: 16px;
     max-width: 100%;
 }
-.facecard-h {
+.a-m-facecard-h {
     background: var(--cards-color);
     border-radius: 24px;
-    text-transform: uppercase;
     margin: 32px auto 0px auto;
     height: 500px;
     padding: 32px;
     font-weight: 500;
         font-size: 24px;
         line-height: 117%;
-        text-transform: uppercase;
         letter-spacing: -0.03em;
 }
 
-.facecard-img {
-    border-radius: 24px;
-    object-fit: cover;
-    margin: auto;
+.a-m-facecard-img {
+        text-transform: uppercase;
+        letter-spacing: -0.03em;
+        border-radius: 24px;
+       object-fit: cover;
+        margin: auto;
 }
 .facecard-accent-text{
     color: var(--accent-color);
@@ -45,6 +49,7 @@
 }
 /* ABOUT */
 .ac .ac-trigger::after {
+
     content: unset !important;
 }
 .about-accordion{
@@ -53,9 +58,8 @@
 .description-list{
     gap: 20px;
 }
-.accordion-el{
-padding: 0px;
-gap: 23px;
+
+.a-m-accordion-el{
 text-transform: uppercase;
 min-height: 68px;
 max-height: fit-content;
@@ -64,14 +68,14 @@ font-size: 16px;
 line-height: 24px;
 color: rgba(250, 250, 250, 0.4);
 }
-.description-list .accordion-el {
+.description-list .a-m-accordion-el {
     background-color: var(--background-color) !important;
     border-bottom: var(--borders);
     border-top: none;
     border-right: none;
     border-left: none;
 }
-.accordion-container .ac-header {
+.a-m-ac-header {
     display: flex;
     flex-direction: row;
     width: 100% !important;
@@ -98,7 +102,7 @@ color: rgba(250, 250, 250, 0.4);
     border: var(--borders) !important;
     border-radius: 100px;
 }
-  .arrow-top {
+  .a-m-arrow-top {
     stroke: var(--text-color);
     width: 18px;
     height: 18px;
@@ -166,28 +170,32 @@ text-align: center;
         width: 28px !important;
         height: 28px !important;
         stroke: var(--arrow-color);
-     
+    fill: none;
 }
 
 @media (min-width: 768px){
     /* section styles */
+    .about-me-section{
+        margin-top: 64px;
+    }
     .about-me {
             gap: 64px;
         }
         /* facecard */
-    .facecard {
+    .a-m-facecard {
         margin: auto;
         min-width: 514px;
         max-width: 704px;
     }
-    .facecard-h {
+
+    .a-m-facecard-h {
         padding: 64px;
         height: 700px;
         font-size: 38px;
         line-height: 105%;
         color: var(--text-color);
     }
-    .facecard-img {
+    .a-m-facecard-img {
         margin: auto;
         width: 100%;
     }
@@ -201,7 +209,7 @@ text-align: center;
         width: 40px;
         height: 40px;
     }
-    .arrow-top{
+    .a-m-arrow-top {
         width: 20px;
         height: 20px;
     }
@@ -209,7 +217,7 @@ text-align: center;
     .skills-container{
             height: 200px;
         }
-    .a-m-swiper{
+    .a-m-swiper {
             max-width: 600px !important;
         }
     .skill-el {
@@ -219,21 +227,27 @@ text-align: center;
 }
 @media (min-width: 1440px){
     /* section */
+    .about-me-section{
+        margin-top: 96px;
+    }
     .about-me {
         gap: 96px;
     }
     /* facecard */
-    .facecard {
+    .a-m-facecard {
         flex-direction: row;
         height: 700px;
         max-width:100%;
     }
-    .facecard-h {
+    .a-m-facecard-h {
          margin: auto;
+        height: 700px;
+        width: 680px;
         height: 100%;
     }
-    .facecard-img {
-        height: 100%;
+    .a-m-facecard-img {
+        height: 700px;
+        width: 680px;
     }
         /* about */
     .about-accordion {
@@ -241,7 +255,7 @@ text-align: center;
             min-width: 514px;
             max-width: 1376px;
         }
-    .ac-panel {
+    .a-m-ac-panel {
             max-width: 612px;
             margin-left: auto;
                 }
