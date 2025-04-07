@@ -75,8 +75,6 @@ function initKeyboardNavigation() { document.addEventListener('keydown', (e) => 
     }) }
 
 
-
-=======
 document.addEventListener("DOMContentLoaded", () => {
 // Акордеон
     const accEls = document.querySelectorAll(".accordion-el");
