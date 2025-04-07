@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function initAccordion() {  
     const rotateArrow = (element, deg) => {
-    const icon = element.querySelector(".arrow-top");
+    const icon = element.querySelector(".a-m-arrow-top");
     if (icon) icon.style.transform = `rotate(${deg}deg)`;
     };
 
@@ -29,7 +29,7 @@ const accordion = new Accordion(".description-list", {
         onClose: (el) => rotateArrow(el, 180),
 });
     
-    Array.from(document.querySelectorAll(".accordion-el")).filter(el => el.classList.contains("is-active")).forEach(el => { 
+    Array.from(document.querySelectorAll(".a-m-accordion-el")).filter(el => el.classList.contains("is-active")).forEach(el => { 
   rotateArrow(el, 0);
    
 });
