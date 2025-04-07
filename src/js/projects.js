@@ -5,9 +5,10 @@ import 'swiper/css';
 const prevButton = document.querySelector('.projects-prev-btn');
 const nextButton = document.querySelector('.projects-next-btn');
 
-const swiper = new Swiper('.swiper', {
+const projectsSwiper = new Swiper('.projects-swiper', {
   modules: [Navigation, Keyboard, Mousewheel, A11y],
   direction: 'horizontal',
+  speed: 400,
   slidesPerView: 1,
   spaceBetween: 40,
   keyboard: {
