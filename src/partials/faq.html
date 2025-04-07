@@ -1,195 +1,139 @@
 <section class="faq section">
-  <h2 class="faq-title">FAQ</h2>
-
   <div class="faq-container container">
-    <ul class="faq-list">
-      <div class="faq-list-grup-1">
-        <!----------------------- first(1) -li ----------------------------->
-
-        <li class="faq-item">
-          <div class="faq-item-grup">
-            <h3 class="faq-li-title">
+    <h2 class="faq-title">FAQ</h2>
+    <div class="faq-columns-wrapper">
+      <!-- Ліва колонка -->
+      <ul class="accordion-container">
+        <li class="ac accordion-el">
+          <div class="ac-header">
+            <h3 class="ac-title">
               What programming languages are most often used in your project?
             </h3>
-            <div>
-              <button class="faq-toggle">
-                <svg
-                  class="icon"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15 12.5L10 7.5L5 12.5"
-                    stroke="#FAFAFA"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <p class="faq-content">
-            In the field of web development, there are various technologies and
-            programming languages. Typically, this includes a combination of
-            frontend (client side) and backend (server side) languages.
-          </p>
-        </li>
-
-        <!----------------------- Second(2) -li ----------------------------->
-
-        <li class="faq-item">
-          <div class="faq-item-grup">
-            <h3 class="faq-li-title">
-              What are the deadlines for the project?
-            </h3>
-            <button class="faq-toggle">
-              <svg
-                class="icon"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 12.5L10 7.5L5 12.5"
-                  stroke="#FAFAFA"
-                  stroke-width="2"
-                />
+            <button
+              class="close-accordion-btn ac-trigger"
+              aria-label="Toggle answer"
+            >
+              <svg class="icon arrow-top">
+                <use xlink:href="../public/svg-sprite.svg#icon-arrow-top"></use>
               </svg>
             </button>
           </div>
-          <p class="faq-content">
-            The terms of project implementation depend to a large extent on a
-            number of factors, such as the scope of the project, its complexity,
-            and the availability of resources. Determining exact deadlines is a
-            difficult task, and it usually occurs during the planning phase of
-            the project.
-          </p>
+          <div class="ac-panel">
+            <p class="ac-text">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
         </li>
 
-        <!----------------------- third(3) -li ----------------------------->
-        <li class="faq-item">
-          <div class="faq-item-grup">
-            <h3 class="faq-li-title">What payment methods do you accept?</h3>
-            <button class="faq-toggle">
-              <svg
-                class="icon"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 12.5L10 7.5L5 12.5"
-                  stroke="#FAFAFA"
-                  stroke-width="2"
-                />
+        <li class="ac accordion-el">
+          <div class="ac-header">
+            <h3 class="ac-title">What are the deadlines for the project?</h3>
+            <button
+              class="close-accordion-btn ac-trigger"
+              aria-label="Toggle answer"
+            >
+              <svg class="icon arrow-top">
+                <use xlink:href="../public/svg-sprite.svg#icon-arrow-top"></use>
               </svg>
             </button>
           </div>
-          <p class="faq-content">
-            Payment through credit and debit cards such as Visa, MasterCard,
-            specialized electronic payment systems such as PayPal, as well as
-            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-          </p>
+          <div class="ac-panel">
+            <p class="ac-text">
+              The terms of project implementation depend on many factors, such
+              as the scope of the project, its complexity, and the availability
+              of resources.
+            </p>
+          </div>
         </li>
-      </div>
 
-      <div class="faq-list-grup-2">
-        <!----------------------- fourth(4) -li ----------------------------->
-
-        <li class="faq-item">
-          <div class="faq-item-grup">
-            <h3 class="faq-li-title">How can I contact you?</h3>
-            <button class="faq-toggle">
-              <svg
-                class="icon"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 12.5L10 7.5L5 12.5"
-                  stroke="#FAFAFA"
-                  stroke-width="2"
-                />
+        <li class="ac accordion-el">
+          <div class="ac-header">
+            <h3 class="ac-title">What payment methods do you accept?</h3>
+            <button
+              class="close-accordion-btn ac-trigger"
+              aria-label="Toggle answer"
+            >
+              <svg class="icon arrow-top">
+                <use xlink:href="../public/svg-sprite.svg#icon-arrow-top"></use>
               </svg>
             </button>
           </div>
-          <p class="faq-content">
-            In the field of web development, there are various technologies and
-            programming languages. Typically, this includes a combination of
-            frontend (client side) and backend (server side) languages.
-          </p>
+          <div class="ac-panel">
+            <p class="ac-text">
+              We accept Visa, MasterCard, PayPal, and cryptocurrencies such as
+              Bitcoin and Ethereum.
+            </p>
+          </div>
         </li>
+      </ul>
 
-        <!----------------------- fifth(5) -li ----------------------------->
-        <li class="faq-item">
-          <div class="faq-item-grup">
-            <h3 class="faq-li-title">Do you provide advice or support?</h3>
-            <button class="faq-toggle">
-              <svg
-                class="icon"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 12.5L10 7.5L5 12.5"
-                  stroke="#FAFAFA"
-                  stroke-width="2"
-                />
+      <!-- Права колонка -->
+      <ul class="accordion-container">
+        <li class="ac accordion-el">
+          <div class="ac-header">
+            <h3 class="ac-title">How can I contact you?</h3>
+            <button
+              class="close-accordion-btn ac-trigger"
+              aria-label="Toggle answer"
+            >
+              <svg class="icon arrow-top">
+                <use xlink:href="../public/svg-sprite.svg#icon-arrow-top"></use>
               </svg>
             </button>
           </div>
-          <p class="faq-content">
-            The terms of project implementation depend to a large extent on a
-            number of factors, such as the scope of the project, its complexity,
-            and the availability of resources. Determining exact deadlines is a
-            difficult task, and it usually occurs during the planning phase of
-            the project.
-          </p>
+          <div class="ac-panel">
+            <p class="ac-text">
+              You can contact us via email, phone, or through the contact form
+              on our website.
+            </p>
+          </div>
         </li>
 
-        <!----------------------- sixth(6) -li ----------------------------->
-        <li class="faq-item">
-          <div class="faq-item-grup">
-            <h3 class="faq-li-title">
+        <li class="ac accordion-el">
+          <div class="ac-header">
+            <h3 class="ac-title">Do you provide advice or support?</h3>
+            <button
+              class="close-accordion-btn ac-trigger"
+              aria-label="Toggle answer"
+            >
+              <svg class="icon arrow-top">
+                <use xlink:href="../public/svg-sprite.svg#icon-arrow-top"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="ac-panel">
+            <p class="ac-text">
+              Absolutely! We offer technical advice, consulting, and full
+              customer support throughout your project.
+            </p>
+          </div>
+        </li>
+
+        <li class="ac accordion-el">
+          <div class="ac-header">
+            <h3 class="ac-title">
               What does the process of developing a software product look like
               from idea to implementation?
             </h3>
-            <button class="faq-toggle">
-              <svg
-                class="icon"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 12.5L10 7.5L5 12.5"
-                  stroke="#FAFAFA"
-                  stroke-width="2"
-                />
+            <button
+              class="close-accordion-btn ac-trigger"
+              aria-label="Toggle answer"
+            >
+              <svg class="icon arrow-top">
+                <use xlink:href="../public/svg-sprite.svg#icon-arrow-top"></use>
               </svg>
             </button>
           </div>
-          <p class="faq-content">
-            Payment through credit and debit cards such as Visa, MasterCard,
-            specialized electronic payment systems such as PayPal, as well as
-            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-          </p>
+          <div class="ac-panel">
+            <p class="ac-text">
+              It involves discovery, planning, design, development, testing, and
+              deployment stages - all tailored to your needs.
+            </p>
+          </div>
         </li>
-      </div>
-    </ul>
+      </ul>
+    </div>
   </div>
 </section>

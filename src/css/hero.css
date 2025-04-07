@@ -5,23 +5,15 @@
 
 .container-narrow {
     background-color: #1c1d20;
-    background-image: url(/src/img/hero.img/Hero.png);
+    background-image: url(../img/hero.img/hero-mob.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-position-x: 39%;
     padding-top: 281px;
-}
-
-@media screen and (min-resolution: 192dpi) {
-    .container-narrow {
-        background-image: url(/src/img/hero.img/Hero-2x.png);
-    }
-}
-
-.container-narrow {
     padding-bottom: 32px;
 }
+
 
 .hero-title {
     font-weight: 500;
@@ -78,6 +70,7 @@
 @media only screen and (min-width: 768px) {
     .container-narrow {
         padding-top: 300px;
+        background-image: url(../img/hero.img/hero-tablet.png);
     }
 
     .hero-title {
@@ -121,5 +114,9 @@
         max-width: 1084px;
         margin: 0 auto;
         margin-bottom: 243px;
+    }
+
+    .container-narrow {
+        background-image: url(../img/hero.img/hero-desk.png);
     }
 }
