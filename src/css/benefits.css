@@ -71,7 +71,6 @@
         padding: 18px 36px;
         width: 187px;
         height: 55px;
-        margin-left: 696px;
 }
 
 .benefits-btn:focus {
@@ -106,7 +105,7 @@
     width: 332px;
 }
 
-.work-together-btn {
+.benefits-btn {
     margin-left: 696px;
 }
 }
