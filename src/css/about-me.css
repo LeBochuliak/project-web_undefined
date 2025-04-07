@@ -45,7 +45,7 @@
     opacity: 40%;
 }
 /* ABOUT */
-.ac .ac-trigger::after {
+.accordion-el .ac-trigger::after {
     content: unset !important;
 }
 .about-accordion{
@@ -71,7 +71,7 @@ color: rgba(250, 250, 250, 0.4);
     border-right: none;
     border-left: none;
 }
-.accordion-container .ac-header {
+.description-list .a-m-ac-header {
     display: flex;
     flex-direction: row;
     width: 100% !important;
