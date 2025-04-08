@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (orderButton) {
     orderButton.addEventListener('click', event => {
       event.preventDefault();
-      scrollToSection('form-foot');
+      scrollToSection('work-together');
       closeMobileMenu();
     });
   }

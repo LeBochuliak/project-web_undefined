@@ -105,6 +105,7 @@ function initSwiper() {
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        autoHeight: false,
       },
       768: {
         slidesPerView: 2,
