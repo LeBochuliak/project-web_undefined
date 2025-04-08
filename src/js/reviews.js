@@ -10,7 +10,7 @@ import closeIcon from '../img/reviews/closeIcon.png';
 import errorIcon from '../img/reviews/errorIcon.png';
 
 const refs = {
-  reviewsSectionBox: document.querySelector('.swiper'),
+  reviewsSectionBox: document.querySelector('.reviews-swiper'),
   reviewsListBox: document.querySelector('.reviews-list'),
 };
 
@@ -74,7 +74,7 @@ function markupRender(data) {
         avatar_url,
         review,
         _id,
-      }) => `<li class="review-item swiper-slide">
+      }) => `<li class="review-item reviews-swiper-slide swiper-slide">
           <img
             width="48px"
             height="48px"
@@ -96,7 +96,7 @@ function markupRender(data) {
 getReviews();
 
 function initSwiper() {
-  new Swiper('.swiper', {
+  new Swiper('.reviews-swiper', {
     speed: 1000,
     spaceBetween: 16,
     autoHeight: true,
@@ -121,8 +121,8 @@ function initSwiper() {
     direction: 'horizontal',
     modules: [Navigation, Keyboard],
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews-swiper-button-next',
+      prevEl: '.reviews-swiper-button-prev',
     },
     keyboard: { enabled: true },
     mousewheel: { enabled: true },

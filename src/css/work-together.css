@@ -1,49 +1,54 @@
 /* Styles for Mobile devices */
 .work-together {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.work-together {
-
     background-image: url(../img/work-together/glass-work-together1x.png);
     background-repeat: no-repeat;
     background-position: right;
 
 }
-
-
 .title-wrapper {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 4px;
-}
-
-.work-together-icon {}
-
-.work-together-text-top,
-.work-together-text-bot {
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-}
-
-.work-together-text-top span {
-    color: #ee3841;
-}
-
-.work-together-text-bot {
+    align-items: flex-start;
+    position: relative;
     margin-bottom: 63px;
 }
 
+.work-together-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+}
+
+.work-title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.work-title .work-span {
+    color: #ee3841;
+}
+.work-title .together-span {
+    display: inline-block;
+    margin-left: -54px;
+}
 .work-together-form {
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
-    position: relative;
+    
 
+}
+.email-label,
+.comment-label {
+    width: 343px;
+    height: 44px;
+    margin-bottom: 16px;
+    position: relative;
 }
 
 .work-together-send-email,
@@ -62,7 +67,16 @@
     padding-bottom: 20px;
 
 }
-
+.email-message {
+    font-size: 12px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    margin-top: 4px;
+    margin-left: 4px;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+}
 .work-together-form input::placeholder {
     position: absolute;
     top: 0;
@@ -94,6 +108,7 @@
     background-color: #f33a43;
     color: #fafafa;
     cursor: pointer;
+    margin-top: 32px;
 }
 
 .work-together-send-contact-btn:hover,
@@ -231,61 +246,61 @@ body.modal-open {
 
 .work-together-modal-message {
     color: rgba(250, 250, 250, 0.6);
+    text-align: center;
 }
 
 /* Styles for Tablet devices */
 
 @media only screen and (min-width: 768px) {
     .work-together {
-        padding-top: 80px;
-        padding-bottom: 160px;
-
-    }
-
-    .work-together {
         background-image: url(../img/work-together/glass-work-together1x-tab.png);
         background-repeat: no-repeat;
         background-position: right;
     }
-
-
-
     .title-wrapper {
         gap: 20px;
+        margin-bottom: 64px;
     }
-
-    .work-together-icon {
+    .work-title {
+        font-size: 64px;
+        line-height: 1.2;
+        }
+    
+        .work-title .work-span {
+            color: #ee3841;
+        }
+    
+        .work-title .together-span {
+            display: inline-block;
+            margin-left: -86px;
+        }
+   .work-together-icon {
         width: 70px;
         height: 70px;
     }
-
     .work-together-text-top,
     .footer-text-bot {
         font-size: 64px;
     }
-
     .work-together-form {
-        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-
-
     }
-
+    .email-label,
+    .comment-label {
+        width: 245px;
+    }
+    .email-message {
+        font-size: 14px;
+        bottom: -20px;
+    }
     .work-together-send-email {
         margin-bottom: 0;
     }
 
     .work-together-send-text {
         margin-bottom: 0;
-    }
-
-    .work-together-send-email,
-    .work-together-send-text {
-        max-width: 245px;
-        height: 44px;
-
     }
 
     .work-together-send-contact-btn {
@@ -323,17 +338,6 @@ body.modal-open {
         text-align: center;
     }
 
-    .email-message {
-        font-size: 14px;
-        line-height: 1.28571;
-        letter-spacing: -0.02em;
-        margin-top: 4px;
-        margin-left: 4px;
-
-        position: absolute;
-        bottom: 30px;
-        left: 0;
-    }
 }
 
 /* Styles for Desktop devices */
@@ -349,11 +353,11 @@ body.modal-open {
     .work-together .container {
         max-width: 1048px;
     }
-
-    .work-together-send-email,
-    .work-together-send-text {
-        max-width: 390px;
+    .email-label,
+    .comment-label {
+        width: 390px;
     }
+    
 }
 
 

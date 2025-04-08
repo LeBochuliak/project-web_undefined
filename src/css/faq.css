@@ -1,22 +1,6 @@
-.faq {
-  margin: 64px auto;
-}
-
 .faq-title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
 }
-
-.faq-container {
-  max-width: 375px;
-  width: 100%;
-  margin: o auto;
-}
-
 .wrapper-faq {
   display: flex;
   flex-direction: column;
@@ -32,7 +16,6 @@
 
 .ac-faq {
   position: relative !important;
-  padding: 20px 0px;
   --color-white: #1c1d20 !important;
   --color-light-grey: #48494c !important;
   border: 0px solid var(rgba(250, 250, 250, 0.2)) !important;
@@ -52,15 +35,13 @@
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: var(--main-text);
-  gap: 16px;
+  margin-top: 20px !important;
 }
 
 .accordion-container-faq > .ac {
   border-left: none !important;
   border-right: none !important;
 }
-
 .ac-trigger-faq {
   display: flex;
   justify-items: center;
@@ -81,10 +62,10 @@
   justify-items: center;
   align-items: center;
 }
-
+.ac-panel-faq {
+  margin: 16px auto 20px;
+}
 .ac-item-text {
-  margin-top: 16px;
-  padding-bottom: 20px;
   color: #a1a2a3 !important;
   font-family: var(--font-family);
   font-weight: 500;
@@ -93,19 +74,22 @@
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
 }
-
+.ac-trigger::after {
+  content: unset !important;
+}
 .arrow-top-faq {
   transition: transform 0.6s ease;
+  stroke: var(--text-color);
+  width: 18px;
+  height: 18px;
+  transform: rotate(180deg);
+  transition: transform 0.1s ease;
 }
 
 @media (min-width: 768px) {
-  .faq-container {
-    max-width: 704px;
-  }
-
-  .faq {
-    margin: 96px auto;
-  }
+    .ac-panel-faq {
+      margin-right: 48px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -116,18 +100,9 @@
   .ac-trigger {
     margin-right: 32px !important;
   }
-  .faq {
-    margin: 164px auto;
-  }
-  .faq-container {
-    max-width: 100%;
-    max-height: 640px;
-  }
-
   .wrapper {
     flex-direction: row;
   }
-
   .accordion-container-faq {
     flex-direction: row;
     flex-wrap: wrap;
@@ -157,4 +132,7 @@
     margin-top: 21px;
     margin-bottom: 26px;
   }
+    .ac-panel-faq {
+      margin-right: 32px;
+    }
 }

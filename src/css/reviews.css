@@ -1,19 +1,9 @@
-.reviews {
-  width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.reviews-cont {
+  overflow: hidden;
 }
-
 .reviews-title {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
 }
-
 .reviews-list {
   margin-bottom: 32px;
 }
@@ -58,12 +48,13 @@
   gap: 12px;
 }
 
-.swiper-slide {
+.reviews-swiper-slide {
   height: auto !important;
+  width: 100% !important;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.reviews-swiper-button-prev,
+.reviews-swiper-button-next {
   border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 60px;
   width: 52px !important;
@@ -73,8 +64,8 @@
   margin-top: 0 !important;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.reviews-swiper-button-next:after,
+.reviews-swiper-button-prev:after {
   content: none !important;
 }
 
@@ -82,12 +73,12 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.swiper-button-disabled .icon {
+.swiper-button-disabled .reviews-swiper-icon {
   stroke: #3b3b3b;
   fill: none;
 }
 
-.icon {
+.reviews-swiper-icon {
   display: inline-block;
   stroke-width: 0;
   width: 24px !important;
@@ -95,7 +86,17 @@
   stroke: #fafafa;
   fill: none;
 }
-
+.reviews-swiper-button-prev {
+  transform: rotate(180deg);
+}
+.reviews-swiper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews-swiper-button:hover {
+  border: 1px solid var(--text-color);
+}
 .reviews-not-found {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
@@ -114,18 +115,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .reviews {
-    padding-top: 48px;
-    padding-bottom: 96px;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
+   .reviews-swiper-button-prev,
+  .reviews-swiper-button-next {
     width: 68px !important;
     height: 68px !important;
   }
 
-  .icon {
+  .reviews-swiper-icon {
     width: 32px !important;
     height: 32px !important;
   }
@@ -141,9 +137,3 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  .reviews {
-    padding-top: 82px;
-    padding-bottom: 164px;
-  }
-}

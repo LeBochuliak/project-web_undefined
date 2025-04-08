@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   const headerButton = document.querySelector('.header-navbar-button');
 
-  const desktopMenuButton = document.querySelector('.tittle-menu');
+  const desktopMenuButton = document.querySelector('.header-title-menu');
   const menuCenterList = document.querySelector('.header-desk-menu-list');
   const menuDeskLinks = document.querySelectorAll('.header-desk-menu-link');
 
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', event => {
     if (
       !event.target.closest('.header-desk-menu-list') &&
-      !event.target.closest('.tittle-menu')
+      !event.target.closest('.header-title-menu')
     ) {
       closeDesktopMenu();
     }
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (headerButton) {
     headerButton.addEventListener('click', event => {
       event.preventDefault();
-      scrollToSection('footer');
+      scrollToSection('work-together');
     });
   }
 });
