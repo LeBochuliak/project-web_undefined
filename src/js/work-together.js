@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const emailMessage = document.createElement('p');
   emailMessage.classList.add('email-message');
-  refs.emailInput.insertAdjacentElement('afterend', emailMessage);
+  if (refs.emailInput) {
+    refs.emailInput.insertAdjacentElement('afterend', emailMessage);
+  }
 
   function validateEmail() {
     const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
