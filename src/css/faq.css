@@ -45,7 +45,6 @@
 .ac-trigger-faq {
   display: flex;
   justify-items: center;
-  justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
   width: 40px;
