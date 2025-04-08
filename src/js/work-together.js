@@ -5,8 +5,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 document.addEventListener('DOMContentLoaded', function () {
   const refs = {
     form: document.querySelector('.work-together-form'),
-    emailInput: document.querySelector('#email'),
-    textInput: document.querySelector('#text'),
+    emailInput: document.querySelector('#user_email'),
+    textInput: document.querySelector('#user_comment'),
     submitButton: document.querySelector('.work-together-send-contact-btn'),
     modalBackdrop: document.querySelector('.work-together-backdrop'),
     modalBtn: document.querySelector('.work-together-modal-btn'),
