@@ -54,6 +54,7 @@
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2) !important;
   padding: 0px !important;
+  margin-left: 20px !important;
 }
 
 .ac-trigger > svg {
@@ -88,6 +89,9 @@
 @media (min-width: 768px) {
     .ac-panel-faq {
       margin-right: 48px;
+    }
+    .ac-trigger-faq {
+      margin-left: 8px !important;
     }
 }
 
@@ -134,4 +138,7 @@
     .ac-panel-faq {
       margin-right: 32px;
     }
+        .ac-trigger-faq {
+          margin-left: 130px !important;
+        }
 }

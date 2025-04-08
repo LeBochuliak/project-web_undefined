@@ -50,7 +50,12 @@
     margin-bottom: 16px;
     position: relative;
 }
-
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .email-label,
+    .comment-label {
+        width: 288px;
+    }
+}
 .work-together-send-email,
 .work-together-send-text {
     color: rgba(250, 250, 250, 0.6);
@@ -125,7 +130,6 @@
     justify-content: flex-start;
     align-items: center;
     gap: 4px;
-
 }
 
 .address-item {
@@ -139,7 +143,11 @@
     height: 37px;
     flex-shrink: 0;
 }
-
+@media only screen and (min-width: 320px) and (max-width: 350px) {
+    .address-item {
+        min-width: 168px;
+    }
+}
 .address-item:hover {
     border: 1px solid #fafafa;
 

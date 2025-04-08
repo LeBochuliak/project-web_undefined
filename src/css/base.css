@@ -1,3 +1,8 @@
+@import 'modern-normalize/modern-normalize.css';
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('/fonts/fonts.ttf') format('truetype');
+}
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
   font-family: 'Inter Tight', sans-serif;
@@ -36,17 +41,18 @@ main:has(.back-link) {
 }
 .section {
   width: 100vw;
-  margin: 64px auto;
+  padding: 32px 0;
 }
 @media (min-width: 768px) {
   .section {
       margin: 96px auto;
+      padding: 48px 0;
     }
 }
 
 @media (min-width: 1440px) {
   .section {
-      margin: 164px auto;
+      padding: 82px 0;
     }
 }
 .section-name {

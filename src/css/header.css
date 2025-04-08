@@ -6,6 +6,7 @@
     background-color: transparent;
     z-index: 999;
     margin: 0 auto;
+    padding-top: 0;
 }
 
 .header-content {
@@ -17,7 +18,10 @@
 .header-navbar-button {
     display: none;
 }
-
+.header-logo-link {
+    display: flex;
+    gap: 8px;
+}
 .image-header {
     border-radius: 18px;
     width: 80px;
@@ -43,7 +47,9 @@
 .header-menu {
     display: none;
 }
-
+.header-title-menu {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .header-mobile-menu-background {
     position: fixed;
     top: 0;
@@ -116,7 +122,8 @@
 }
 
 .header-mobile-menu-close-icon:hover,
-.header-mobile-menu-close-icon:focus {
+.header-mobile-menu-close-icon:focus,
+{
     stroke: #ed3b44;
     fill: #ed3b44;
 }
@@ -143,7 +150,8 @@
 }
 
 .header-mobile-menu-link:hover,
-.header-mobile-menu-link:focus {
+.header-mobile-menu-link:focus,
+ {
     color: var(--accent-color);
 }
 

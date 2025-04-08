@@ -1,14 +1,11 @@
 .covers-section {
-  margin: 64px auto;
 }
 @media (min-width: 768px) {
   .covers-section {
-    margin: 96px auto;
   }
 }
 @media (min-width: 1440px) {
   .covers-section {
-    margin: 164px auto;
   }
 }
 .covers-container {
@@ -21,9 +18,11 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-@media (max-width: 350px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   .covers-container {
-    left: 5%;
+    min-width: 320px;
+    max-width: 375px;
+    height: 508px;
   }
 }
 @media (max-width: 767px) {
