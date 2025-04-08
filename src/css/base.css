@@ -1,7 +1,8 @@
 @import 'modern-normalize/modern-normalize.css';
 @font-face {
   font-family: 'Inter Tight';
-  src: url('/fonts/fonts.ttf') format('truetype');
+  src: url('/fonts/InterTight-Medium.ttf') format('truetype'),
+      url('/fonts/InterTight-SemiBold.ttf') format('truetype');
 }
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
