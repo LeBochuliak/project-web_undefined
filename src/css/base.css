@@ -46,7 +46,6 @@ main:has(.back-link) {
 }
 @media (min-width: 768px) {
   .section {
-      margin: 96px auto;
       padding: 48px 0;
     }
 }
