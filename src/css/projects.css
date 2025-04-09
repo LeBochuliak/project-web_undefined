@@ -44,7 +44,7 @@
 }
 
 .project-technology-list {
-  padding-bottom: 96px;
+  margin-bottom: 96px;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -52,13 +52,13 @@
 
 @media screen and (min-width: 768px) {
   .project-technology-list {
-    padding-bottom: 164px;
+    margin-bottom: 164px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .project-technology-list {
-    padding-bottom: 223px;
+    margin-bottom: 223px;
   }
 }
 
@@ -79,7 +79,7 @@
 }
 
 .project-subtitle {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   color: var(--background-color);
   font-size: 24px;
   font-weight: 500;
