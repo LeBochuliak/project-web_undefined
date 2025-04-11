@@ -124,8 +124,8 @@
 .header-mobile-menu-close-icon:hover,
 .header-mobile-menu-close-icon:focus,
 {
-    stroke: #ed3b44;
-    fill: #ed3b44;
+    stroke: #a21017;
+    fill: #a21017;
 }
 
 .header-mobile-menu-list {
@@ -269,13 +269,13 @@
         border-radius: 60px;
         width: 163px;
         height: 55px;
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 
 
     .header-navbar-button:hover {
-        background-color: #e0373f;
+        background-color: #a21017;
         ;
     }
 }

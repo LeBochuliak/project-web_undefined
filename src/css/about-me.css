@@ -135,6 +135,9 @@
     text-transform: none;
     color: var(--text-color) !important;
 }
+.ac-trigger {
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
 .ac-trigger:hover {
     border: 1px solid var(--text-color) !important;
 }
@@ -199,6 +202,7 @@
     height: 28px !important;
     stroke: var(--arrow-color);
     fill: none;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .swiper-a-m-svg:hover {
     stroke: var(--text-color);
